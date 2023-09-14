@@ -113,6 +113,7 @@ form input[type="text"]{
 #zip{
 	display: flex;
 	margin-top: 0.5rem;
+  gap:1rem
 }
 #zip select{
 	padding: 0.5rem 0.7rem;

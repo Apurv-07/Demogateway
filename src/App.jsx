@@ -26,6 +26,9 @@ export default function App() {
   const handleClick = () => {
     navigate("/cart");
   };
+  const handleCheckout = () => {
+    navigate("/payment");
+  };
   return (
     <div className="App">
       <div className="Head">
@@ -35,6 +38,7 @@ export default function App() {
             <Link to="/home">Home</Link>
           </h5>
           <button onClick={handleClick}>Cart</button>
+          <button onClick={handleCheckout}>Checkout</button>
         </div>
       </div>
       <Routes>
