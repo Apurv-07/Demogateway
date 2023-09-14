@@ -11,17 +11,21 @@ export default function App() {
   const addToCart = (item) => {
     setCart([item, ...cart]);
   };
+  // const removeFromCart = (item) => {
+  //   let newCart=cart.filter((index)=>{
+  //     return index!=item;
+  //   })
+  //   console.log("The current items in cart", newCart)
+  //   setCart(newCart)
+  // };
   const removeFromCart = (item) => {
-    // var cartIndex = cart.indexOf(item); //get  "car" index
-    // //remove car from the colors array
-    // let changedCart=cart.splice(cartIndex, 1);
-    // setCart(changedCart)
-    // console.log("My Cart", changedCart);
-    let newCart=cart.filter((index)=>{
-      return index!=item;
-    })
-    console.log("The current items in cart", newCart)
-    setCart(newCart)
+    const indexOfItem = cart.indexOf(item);
+  
+    if (indexOfItem !== -1) {
+      let newCart = [...cart];
+      newCart.splice(indexOfItem, 1);
+      setCart(newCart);
+    }
   };
   const handleClick = () => {
     navigate("/cart");
