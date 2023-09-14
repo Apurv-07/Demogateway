@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Head {
+  display: flex;
+  justify-content: space-between;
+}
+.Head button {
+  height: 30px;
+  margin-top: 15px;
+}
+.Head h5 {
+  display: inline;
+  margin-right: 20px;
+}
+.cart {
+  margin: 10px;
+  padding: 20px;
+  background-color: honeydew;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  margin: 10px;
+  background: chocolate;
+  border-radius: 15px;
+  width: 200px;
+}
