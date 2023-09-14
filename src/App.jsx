@@ -4,6 +4,7 @@ import Home from "./Home";
 import Item from "./Item";
 import Cart from "./Cart";
 import { useState } from "react";
+import Payment from "./pages/Payment";
 export default function App() {
   const navigate = useNavigate();
   var [cart, setCart] = useState([]);
@@ -38,6 +39,7 @@ export default function App() {
       </div>
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/payment" element={<Payment/>} />
         <Route path="/:id" element={<Item click={addToCart} />} />
         <Route
           path="/cart"

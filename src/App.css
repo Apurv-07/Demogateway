@@ -23,7 +23,6 @@
   align-items: center;
 }
 .container {
-  background: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
