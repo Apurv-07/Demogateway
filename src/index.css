@@ -80,7 +80,6 @@ header{
 }
 .container{
 	background: #dce1e9;
-	max-width: 800px;
 	min-height: 500px;
 	display: flex;
 	justify-content:space-between;

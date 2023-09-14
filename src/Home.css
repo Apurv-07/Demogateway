@@ -12,7 +12,7 @@
     margin: 50px 0;
 }
 .content{
-    width: 20%;
+    min-width: 20%;
     margin: 15px;
     box-sizing: border-box;
     float: left;

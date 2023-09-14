@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart(props) {
     console.log("Props", props)
@@ -15,6 +16,10 @@ export default function Cart(props) {
   useEffect(() => {
     setTotal(price);
   }, [price]);
+  const navigate=useNavigate()
+  const handleClick=()=>{
+    navigate('/payment')
+  }
   //Is it possible with reduce?
   // var ko=yo.reduce((item, sum)=>{
 
@@ -34,6 +39,7 @@ export default function Cart(props) {
         );
       })}
       <h2>Total: Rs {total}</h2>
+      <button style={{background: 'black !important'}} onClick={handleClick}>Buy now</button>
     </>
   );
 }
