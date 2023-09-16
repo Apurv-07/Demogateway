@@ -3,11 +3,18 @@
     text-decoration: none;
 }
 
+.content-box {
+    box-shadow: 0 14px 28px rgb(0,0,00.25) ;
+    background: #2183a2;
+}
+.container {
+    display: flex;
+    justify-content: unset !important;
+}
 .gallery{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     align-items: center;
     margin: 50px 0;
 }
@@ -20,7 +27,7 @@
     border-radius: 20px;
     cursor: pointer;
     padding-top: 10px;
-    box-shadow: 0 14px 28px rgb(0,0,00.25) ;
+    
     transition: .4s;
     background: #f2f2f2;
 }
@@ -29,34 +36,33 @@
 
     transform: translate(0px,-18);
 }
-img{
+.content img {
     width: 200px;
     height: 200px;
     text-align: center;
     margin: 0 auto;
-
 }
-p{
+.content p{
     text-align: center;
     
     padding-top: 0 8px;
 }
-h6{
+.content h6{
     font-size: 26px;
     text-align: center;
     color: #222f3e;
     margin: 0;
 }
-ul{
+.content ul{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-li{
+.content li{
     padding-top: 5px;
 }
-button{
+.content button{
     text-align: center;
     font-size: 24px;
     color: #fff;

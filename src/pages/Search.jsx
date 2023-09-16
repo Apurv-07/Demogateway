@@ -1,20 +1,20 @@
-import data from "./Shopdata";
-import { Link, useNavigate } from "react-router-dom";
-// import './Home.css'
-export default function Home(props) {
-  //console.log(data)
-  const navigate = useNavigate();
-  const handleClick = (id) => {
-    navigate(`/${id}`);
-  };
-  function handleCart(item) {
-    // eslint-disable-next-line react/prop-types
-    props.add(item);
-  }
+import data from "../Shopdata";
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
+
+const Search = (props) => {
+    const location=useLocation();
+    // console.log(location)
+    let res=data.filter((item)=>{
+        return item.name.toLowerCase().includes(location.state.text)
+      })
+      const handleCart=(item)=>{
+        props.add(item)
+      }
   return (
-    <div>
-      <div className="row">
-          {data.map((item, index) => {
+    <div>Search Results:
+        <div className="row">
+          {res.map((item, index) => {
             return (
               <>
                   <div className="col-lg-3 col-md-6 col-6 mt-5 p-0 px-1">
@@ -40,13 +40,7 @@ export default function Home(props) {
           })}
         </div>
     </div>
-  );
+  )
 }
-//   <div className="card" key={item.id}>
-//     <img src={item.photo} height="200" width="200" />
-//     <h2>
-//       {item.name} : Rs {item.price}
-//     </h2>
-//     <Link to={`/${item.id}`}>View</Link>
-//     <h1></h1>
-//   </div>
+
+export default Search;

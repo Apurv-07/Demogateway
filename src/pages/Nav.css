@@ -1,0 +1,49 @@
+.nav-item .links{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+.nav-item .links:hover{
+    color: rgb(20,219,20);
+}
+.navbar-brand{
+    color: rgb(20,219,20);
+}
+.search{
+    height: 45px;
+    outline: none;
+    border: 2px solid rgb(20,219,20);
+    border-radius: 20px 0px 0px 20px;
+    border-right: none;
+    box-shadow: none;
+    text-align: center;
+}
+.btn1{
+    outline: none;
+    border: none;
+    background-color: rgb(20,219,20);
+    color: #fff;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.4s;
+}
+
+.btn1:hover{
+    background-color: rgb(2, 137, 2);
+}
+.bi-bag-check{
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    padding-top: 5px;
+    transition: all 0.4s;
+}
+.bi-bag-check:hover{
+    color: rgb(20,219,20);
+}
+.navbar-toggler{
+    outline: none;
+    box-shadow: none;
+}

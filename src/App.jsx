@@ -1,11 +1,13 @@
-import "./App.css";
-import { Routes, useNavigate, Route, Link } from "react-router-dom";
+// import "./App.css";
+import { Routes, useNavigate, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Item from "./Item";
 import Cart from "./Cart";
 import { useState } from "react";
 import Payment from "./pages/Payment";
 import Order from "./pages/Order";
+import Nav from "./pages/Nav";
+import Search from "./pages/Search";
 export default function App() {
   const navigate = useNavigate();
   var [cart, setCart] = useState([]);
@@ -28,32 +30,33 @@ export default function App() {
       setCart(newCart);
     }
   };
-  const handleClick = () => {
-    navigate("/cart");
-  };
-  const handleCheckout = () => {
-    navigate("/payment");
-  };
+
+  const empty=()=>{
+    setCart([])
+  }
+
   return (
-    <div className="App">
-      <div className="Head">
-        <h2>My Own Ecom website</h2>
-        <div>
+    <div>
+      <div>
+        <Nav />
+        {/* <div>
           <h5>
             <Link to="/home">Home</Link>
           </h5>
           <button onClick={handleClick}>Cart</button>
           <button onClick={handleCheckout}>Checkout</button>
-        </div>
+        </div> */}
       </div>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Home add={addToCart} />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/order" element={<Order cart={cart} />} />
+        <Route path="/search" element={<Search add={addToCart} />} />
         <Route path="/:id" element={<Item click={addToCart} />} />
         <Route
           path="/cart"
-          element={<Cart list={cart} remove={removeFromCart} />}
+          element={<Cart list={cart} remove={removeFromCart} empty={empty} />}
         />
       </Routes>
     </div>
