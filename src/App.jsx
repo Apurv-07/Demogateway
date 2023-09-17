@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div>
       <div>
-        <Nav />
+        <Nav length={cart.length} />
         {/* <div>
           <h5>
             <Link to="/home">Home</Link>

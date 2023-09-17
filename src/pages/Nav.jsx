@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Nav.css";
 import { Link, useNavigate } from "react-router-dom";
-const Nav = () => {
+const Nav = (props) => {
     let [text, setText]=useState("");
     const navigate=useNavigate();
     const handleSearch=()=>{
@@ -29,7 +29,7 @@ const Nav = () => {
           <Link to="/about" className="links nav-link">ABOUT</Link>
           </li>
           <li className="nav-item">
-          <Link to="/cart" className="links nav-link">CART</Link>
+          <Link to="/cart" className="links nav-link">CART {props.length>0 && `(${props.length})`}</Link>
           </li>
         </ul>
         </div>
