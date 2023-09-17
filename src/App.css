@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-between;
 }
+.content-wrapper {
+  min-height: 55vh !important;
+  background-color: aquamarine;
+}
+
 .Head button {
   height: 30px;
   margin-top: 15px;

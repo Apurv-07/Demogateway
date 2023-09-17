@@ -1,80 +1,80 @@
-
-.a{
-    text-decoration: none;
-}
-
-.content-box {
-    box-shadow: 0 14px 28px rgb(0,0,00.25) ;
-    background: #2183a2;
-}
-.container {
-    display: flex;
-    justify-content: unset !important;
-}
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
+.main{
+    background: url('https://cdn.shopify.com/s/files/1/0083/6845/5746/files/81eCvF-6DhL._SL1500_2340db8d-1f46-4522-b3fd-b8aba90705ab_2048x2048.jpg?v=1575051080');
+    background-size: cover;
+    height: 113vh;
     width: 100%;
-    align-items: center;
-    margin: 50px 0;
 }
-.content{
-    min-width: 20%;
-    margin: 15px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    padding-top: 10px;
-    
-    transition: .4s;
-    background: #f2f2f2;
-}
-.content:hover{
-    box-shadow: 0 3px 6px rgb(0,0,00.16);
 
-    transform: translate(0px,-18);
-}
-.content img {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin: 0 auto;
-}
-.content p{
-    text-align: center;
-    
-    padding-top: 0 8px;
-}
-.content h6{
-    font-size: 26px;
-    text-align: center;
-    color: #222f3e;
-    margin: 0;
-}
-.content ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content li{
-    padding-top: 5px;
-}
-.content button{
-    text-align: center;
-    font-size: 24px;
+.main h1{
+    font-size: 4rem;    
     color: #fff;
-    width: 100%;
-    padding: 15px;
-    border: 15px;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
-.buy-1{
-    background: #2183a2;
+.line{
+    font-size: 18px;
+    color: #fff;
+}
+.mbtn1{
+    height: 50px;
+    width: 40%;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(20,219,20);
+    border-radius:25px;
+}
+.mbtn2{
+    height: 50px;
+    width:40%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(248, 211, 142)
+    
+    
+}
+
+.font-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.mbtn2:hover{
+   background-color: rgb(20,219,20); 
+   color: #fff;
+   border: none;
+}
+
+
+/* About  */
+.welcome{
+    background: rgb(209, 224, 209);
+    
+}
+.line2{
+    height: 6px;
+    width: 30%;
+    background-color: #fff;
+    display:inline-block;
+}
+
+.welcome h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.welcome p{
+    font-weight: bold;
+    color: #fff;
+}
+
+.welcome.card{
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+}
+.welcome i{
+    font-size: 45px;
+    color: rgb(20,219,20);
 }

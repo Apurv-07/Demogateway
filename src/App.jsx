@@ -8,6 +8,9 @@ import Payment from "./pages/Payment";
 import Order from "./pages/Order";
 import Nav from "./pages/Nav";
 import Search from "./pages/Search";
+import Footer from "./pages/Footer"
+import About from "./pages/About";
+import Products from "./pages/Products";
 export default function App() {
   const navigate = useNavigate();
   var [cart, setCart] = useState([]);
@@ -38,7 +41,7 @@ export default function App() {
   return (
     <div>
       <div>
-        <Nav length={cart.length} />
+        <Nav cartLength={cart} />
         {/* <div>
           <h5>
             <Link to="/home">Home</Link>
@@ -47,18 +50,23 @@ export default function App() {
           <button onClick={handleCheckout}>Checkout</button>
         </div> */}
       </div>
+      <div style={{minHeight: '55vh'}}>
       <Routes>
         <Route path="*" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home add={addToCart} />} />
+        <Route path="/products" element={<Products add={addToCart} />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/order" element={<Order cart={cart} />} />
         <Route path="/search" element={<Search add={addToCart} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/:id" element={<Item click={addToCart} />} />
         <Route
           path="/cart"
           element={<Cart list={cart} remove={removeFromCart} empty={empty} />}
         />
       </Routes>
+      </div>
+      <div className="footer"><Footer /></div>
     </div>
   );
 }
