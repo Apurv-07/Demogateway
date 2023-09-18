@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './pages/FeaturedProducts.css'
 
 export default function Cart(props) {
   console.log("Props", props);
@@ -68,24 +69,14 @@ export default function Cart(props) {
                     </div>
                   </div>
                   <div className="row  mx-auto justify-content-center text-center">
-                    <div className="col-12 mt-3 ">
+                    <div className="col-12 mt-3 d-flex">
                       <nav aria-label="breadcrumb" className="second ">
-                        <ol className="breadcrumb indigo lighten-6 first  ">
-                        <li className="breadcrumb-item font-weight-bold">
-                              <button className="black-text text-uppercase" onClick={() => navigate(-1)}>Go back</button>
-                            <i
-                              className="fa fa-angle-double-right text-uppercase "
-                              aria-hidden="true"
-                            ></i>
-                          </li>
-                          <li className="breadcrumb-item font-weight-bold">
-                              <button className="black-text text-uppercase" onClick={()=>remove(item)}>Remove</button>
-                            <i
-                              className="fa fa-angle-double-right text-uppercase "
-                              aria-hidden="true"
-                            ></i>
-                          </li>
-                        </ol>
+                        <div className="d-flex gap-2">
+                        <button style={{minWidth: '150px'}} className="button black-text text-uppercase" onClick={() => navigate(-1)}>Go back</button>
+                            {/* */}
+                              <button style={{minWidth: '150px'}} className="button black-text text-uppercase" onClick={()=>remove(item)}>Remove</button>
+                          
+                        </div>
                       </nav>
                     </div>
                   </div>
@@ -99,13 +90,14 @@ export default function Cart(props) {
             <div className="row justify-content-center">
               <div className="col-xl-10">
                 <div className="card shadow-lg">
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-between align-items-center p-lg-2">
       <h2>Total: Rs {total}</h2>
       {list.length>0 && <div>
-      <button style={{ background: "black", color:'white' }} onClick={handleClick}>
+      <button className="button black-text text-uppercase my-2" onClick={handleClick}>
         Buy now
       </button>
-      <button style={{ background: "black", color:'white' }} onClick={empty}>
+      <br />
+      <button className="button black-text text-uppercase my-2" onClick={empty}>
         Empty cart
       </button>
       </div>}

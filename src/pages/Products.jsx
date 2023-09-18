@@ -27,10 +27,10 @@ export default function Products(props) {
                           alt="..."
                         />
                         <div className="card-body">
-                          <h5 className="card-title text-nowrap">{item.name}</h5>
+                          <h5 className="card-title text-nowrap text-truncate">{item.name}</h5>
                           <h5>Rs. {item.price}</h5>
                           <button  className="button align-item-center" onClick={()=>handleCart(item)}>Add to cart</button>
-                          <Link to={`/${item.id}`}>View</Link>
+                          <button  className="button align-item-center mt-2" onClick={()=>navigate(`/${item.id}`)}>View</button>
                         </div>
                       </div>
                     </div>

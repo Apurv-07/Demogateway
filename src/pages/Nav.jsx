@@ -29,7 +29,7 @@ const Nav = (props) => {
           <Link to="/about" className="links nav-link">ABOUT</Link>
           </li>
           <li className="nav-item">
-          <Link to="/cart" className="links nav-link">CART {props.length>0 && `(${props.length})`}</Link>
+          <Link to="/cart" className="links nav-link">CART {props.cartLength.length>0 && `(${props.cartLength.length})`}</Link>
           </li>
         </ul>
         </div>

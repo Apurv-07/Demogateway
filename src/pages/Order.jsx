@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const Order = ({cart}) => {
+const Order = ({cart, empty}) => {
+  const [newCart, setNewCart]=useState([])
     function generate16DigitNumber() {
         const min = 1e15; // Minimum 16-digit number
         const max = 1e16 - 1; // Maximum 16-digit number
@@ -17,16 +18,20 @@ const Order = ({cart}) => {
       // Example usage:
       const sixteenDigitNumber = generate16DigitNumber();
     useEffect(()=>{
+      setNewCart([...newCart, ...cart])
         if(cart.length){
             alert("Payment success")
+            console.log(cart)
+            empty();
         }
+        console.log("Cart", newCart)
     },[])
   return (
     <div>
-        {cart.length ?<div>
+        {newCart.length ?<div>
         <h1>Order confirmed</h1>
         <h2>Your order has been placed successfully</h2><br/><br/>
-        <h3>For: {cart.map((item)=>{
+        <h3>For: {newCart.map((item)=>{
             return <div key={sixteenDigitNumber}>
                 {item.name}<br/>
             </div>
