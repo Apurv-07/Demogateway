@@ -3,18 +3,18 @@ import { useNavigate } from "react-router-dom";
 import './pages/FeaturedProducts.css'
 
 export default function Cart(props) {
-  console.log("Props", props);
   // eslint-disable-next-line react/prop-types
   const { list, remove, empty } = props;
   var [total, setTotal] = useState(0);
   var price = 0;
-  console.log("List", list);
   list.map((item) => {
-    console.log(item, "Item");
     price = price + item.price;
   });
 
+  
   useEffect(() => {
+    console.log("The storage on refresh data", list);
+    // console.log("See storage", JSON.parse(localStorage.getItem(cart)))
     setTotal(price);
   }, [price]);
 
