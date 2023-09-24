@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import Modal from './Modal';
+import Backdrop from './Backdrop';
 
 const Order = ({cart, empty}) => {
   const [newCart, setNewCart]=useState([])
+  const [modalOpen, setModalOpen]=useState(false)
     function generate16DigitNumber() {
         const min = 1e15; // Minimum 16-digit number
         const max = 1e16 - 1; // Maximum 16-digit number
@@ -23,12 +26,20 @@ const Order = ({cart, empty}) => {
             alert("Payment success")
             console.log(cart)
             empty();
+            setModalOpen(true)
+            console.log("If model is open", modalOpen)
         }
-        console.log("Cart", newCart)
+        console.log("Cart", newCart, modalOpen)
     },[])
   return (
     <div>
         {newCart.length ?<div>
+          <Modal open={modalOpen} setOpen={setModalOpen}>
+            <h2>Congratulations!</h2>
+            <p>Your order was placed successfully</p>
+            
+          </Modal>
+          {modalOpen && <Backdrop onClick={()=>setModalOpen(false)} />}
         <h1>Order confirmed</h1>
         <h2>Your order has been placed successfully</h2><br/><br/>
         <h3>For: {newCart.map((item)=>{

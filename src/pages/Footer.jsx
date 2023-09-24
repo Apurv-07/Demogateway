@@ -20,7 +20,7 @@ const Footer = () => {
             <li>privacy</li>
             <li>Shipping</li>
             <li>No Refund Policy</li>
-            <li>Terms & Policy</li>
+            <li><Link to="/terms&condition">Terms & Policy</Link></li>
           </div>
         </div>
         <div className="col-md-4">
@@ -33,9 +33,9 @@ const Footer = () => {
               <li><Link to='/about'>ABOUT</Link></li>
               <li>DELIVERY INFORMATION</li>
               <li>
-                <a href="#"> PRIVACY POLICY</a>
+                <Link to="/terms&conditions"> PRIVACY POLICY</Link>
               </li>
-              <li><Link to='/contact'>TERMS AND CONDITION</Link></li>
+              <li><Link to='/terms&conditions'>TERMS AND CONDITION</Link></li>
             </ul>
           </div>
         </div>

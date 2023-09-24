@@ -9,7 +9,7 @@ const additionalCopperBottleData = [
                'https://n3.sdlcdn.com/imgs/i/e/3/New-raj-enterprises-Plain-copper-SDL159455825-2-2b390.jpg'],
       size: "750ml",
       desc: "Experience the goodness of copper with our Copper Bottle XL. This large 750ml bottle is perfect for staying hydrated throughout the day while reaping the benefits of copper's health properties.",
-      photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+      photo: "https://images.meesho.com/images/products/51061464/b3dvu_512.jpg"
   },
   {
       id: 6,
@@ -33,7 +33,7 @@ const additionalCopperBottleData = [
                  'https://images-na.ssl-images-amazon.com/images/I/61G1%2B9lziuL._SL1454_.jpg'],
       size: "350ml",
       desc: "Stay refreshed on the go with our Copper Travel Flask. This compact 350ml flask is designed for portability, allowing you to enjoy the benefits of copper wherever you are.",
-      photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+      photo: "https://www.ecosattvastore.com/media/catalog/product/cache/cac5fc23675462ffc8966cd730838c6c/a/y/ayurvedic_handmade_copper_water_bottle_99.9_pure-_hammered.png"
   },
   {
       id: 8,
@@ -45,7 +45,7 @@ const additionalCopperBottleData = [
                 'https://n1.sdlcdn.com/imgs/j/c/8/TAMRANSH-Printed-Copper-Bottle-Multicolour-SDL109758523-1-c308e.jpg'],
       size: "500ml (Set of 2)",
       desc: "Share the gift of health with our Copper Water Bottle Set. This set includes two 500ml copper bottles, making it perfect for you and a loved one to enjoy the benefits of copper-infused water together.",
-      photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+      photo: "https://rukminim2.flixcart.com/image/850/1000/je7f1jk0/bottle/z/z/q/950-copper-water-bottle-copper-the-metal-magic-original-imaf2ws9svtdjasm.jpeg?q=90"
   },
   {
       id: 9,
@@ -57,7 +57,7 @@ const additionalCopperBottleData = [
                 'https://i.etsystatic.com/24456550/r/il/1e8980/2494780167/il_1588xN.2494780167_9h7f.jpg'],
       size: "800ml",
       desc: "Elevate your yoga practice with our Copper Yoga Bottle. With a generous 800ml capacity, this bottle ensures you stay hydrated and refreshed during your yoga sessions, all while benefiting from the goodness of copper.",
-      photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+      photo: "https://5.imimg.com/data5/SELLER/Default/2023/8/336173682/OG/CJ/SM/31313847/copper-bottle-250x250.jpg"
   },
 
   
@@ -87,7 +87,7 @@ const additionalCopperBottleData = [
           ],
           size: "750ml",
           desc: "Experience the ancient wisdom of Ayurveda with our Copper Ayurvedic Bottle. This 750ml bottle is designed to store and dispense copper-infused water, promoting holistic well-being.",
-          photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+          photo: "https://media.istockphoto.com/id/1411165365/photo/copper-water-bottle.jpg?s=612x612&w=0&k=20&c=5y_4yqSMuyiKjoorWeYOtPCBHR1P-jAWsmO_tw6wSr8="
       },
       {
           id: 12,
@@ -101,7 +101,7 @@ const additionalCopperBottleData = [
           ],
           size: "1 liter",
           desc: "Nourish your body with our Copper Wellness Elixir. This 1-liter bottle is ideal for storing and sipping copper-infused elixirs, promoting overall health and vitality.",
-          photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+          photo: "https://5.imimg.com/data5/ANDROID/Default/2023/3/NO/VR/ST/123094911/product-jpeg-500x500.jpg"
       },
       {
           id: 13,
@@ -115,7 +115,7 @@ const additionalCopperBottleData = [
           ],
           size: "500ml",
           desc: "Spread the love with our Copper Love Bottle. This 500ml bottle is engraved with heartfelt messages, making it a thoughtful gift while offering the benefits of copper water.",
-          photo: "https://www.copperhealer.com/wp-content/uploads/2020/04/pure-copper-water-bottle-hammered2.jpg"
+          photo: "https://png.pngtree.com/thumb_back/fh260/background/20220701/pngtree-traditional-indian-copper-mineral-water-bottle-metallic-container-ayurveda-photo-image_32226664.jpg"
       },
       {
           id: 14,

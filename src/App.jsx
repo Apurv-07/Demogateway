@@ -10,6 +10,7 @@ import Products from "./pages/Products";
 import Home from "./Home";
 import Item from "./Item";
 import Cart from "./Cart";
+import Terms from "./pages/Terms";
 
 export default function App() {
   const navigate = useNavigate();
@@ -67,6 +68,10 @@ export default function App() {
           <Route
             path="/cart"
             element={<Cart list={cart} remove={removeFromCart} empty={empty} />}
+          />
+          <Route
+            path="/terms&condition"
+            element={<Terms />}
           />
         </Routes>
       </div>
