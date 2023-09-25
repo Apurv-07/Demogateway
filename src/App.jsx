@@ -63,7 +63,7 @@ export default function App() {
           <Route path="/order" element={<Order empty={empty} cart={cart} />} />
           <Route path="/search" element={<Search add={addToCart} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/home" element={<Home add={addToCart} />} />
+          <Route path="/" element={<Home add={addToCart} />} />
           <Route path="/:id" element={<Item click={addToCart} />} />
           <Route
             path="/cart"
