@@ -25,17 +25,15 @@ const Footer = () => {
         </div>
         <div className="col-md-4">
           <div className="colm1">
-            <h4>COSTOMER SERVICE</h4>
+            <h4>COSTUMER SERVICE</h4>
             <ul>
-              <li><Link to='/contact'>CONTACT</Link></li>
+              <li>CONTACT</li>
               <li>RETURNS</li>
               <li>SITE MAP</li>
-              <li><Link to='/about'>ABOUT</Link></li>
+              <li>ABOUT</li>
               <li>DELIVERY INFORMATION</li>
-              <li>
-                <Link to="/terms&conditions"> PRIVACY POLICY</Link>
-              </li>
-              <li><Link to='/terms&conditions'>TERMS AND CONDITION</Link></li>
+             
+             
             </ul>
           </div>
         </div>
